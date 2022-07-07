@@ -16,5 +16,13 @@
 </table>
 
 <!-- TODO 2b: use *ngFor to display satellite data in the table -->
+<tr *ngFor="let satellite of satellites ">
+    <td>{{satellite.name}}</td>
+    <td>{{satellite.type}}</td>
+    <td>{{satellite.operational}}</td>
+    <td [class.warning]>{{satellite.orbitType}}</td>
+    <td>{{satellite.launchDate}}</td>
+ </tr>
+
 <!-- TODO 3b: add style directive to conditionally highlight satellite type -->
 
